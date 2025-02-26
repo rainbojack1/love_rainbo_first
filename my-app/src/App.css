@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.background-container {
+  background-image: url('./assets/waffle-pattern-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

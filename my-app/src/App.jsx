@@ -1,34 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import loveRainboLogo from './assets/love-rainbo-icon.jpg'
+import loveRainboTransparentLogo from './assets/love-rainbo-icon-transparent.jpg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    // <div className='background-container'>
+    <div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+       <a href="https://react.dev" target="_blank">
+       <img src={loveRainboLogo} className="logo love rainbo" alt="Love Rainbo logo" />
+       <img src={loveRainboTransparentLogo} className="logo love rainbo" alt="Love Rainbo transparent logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Welcome to Love Rainbo</h1>
+      <h3>We offer consulting, task assisting, and other various services.</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
